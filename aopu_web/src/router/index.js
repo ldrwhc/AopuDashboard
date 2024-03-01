@@ -1,0 +1,89 @@
+import VueRouter from "vue-router";
+const routes = [
+    {
+        path:'/',
+        name:'login',
+        component:()=>import("../components/Login")
+    },
+    {
+        path:'/Index',
+        name:'index',
+        component:()=>import("../components/Index"),
+        children:[
+            {
+                path:'/Home',
+                name:'home',
+                meta:{
+                    title:'首页'
+                },
+                component:()=>import('../components/Home')
+            },
+            {
+                path:'/Store',
+                name:'store',
+                meta:{
+                    title:'门店信息'
+                },
+                component:()=>import('../components/Store')
+            },
+            {
+                path:'/Sale',
+                name:'sale',
+                meta:{
+                    title:'门店销售统计表'
+                },
+                component:()=>import('../components/Sale')
+            },
+            {
+                path:'/Agent',
+                name:'agent',
+                meta:{
+                    title:'代理商信息'
+                },
+                component:()=>import('../components/Agent')
+            },
+            {
+                path:'/Salesman',
+                name:'salesman',
+                meta:{
+                    title:'业务员信息'
+                },
+                component:()=>import('../components/Salesman')
+            },
+            {
+                path:'/Purchasing',
+                name:'purchasing',
+                meta:{
+                    title:'代理商进货数据'
+                },
+                component:()=>import('../components/Purchasing')
+            },
+            {
+                path:'/Inventory',
+                name:'inventory',
+                meta:{
+                    title:'产品库'
+                },
+                component:()=>import('../components/Inventory')
+            },
+            {
+                path:'/Article',
+                name:'article',
+                meta:{
+                    title:'产品库'
+                },
+                component:()=>import('../components/Article')
+            },
+        ]
+    }
+]
+
+const router = new VueRouter({
+    mode:'history',
+    routes
+})
+const VueRouterPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(to){
+    return VueRouterPush.call(this,to).catch(err=>err)
+}
+export default router;

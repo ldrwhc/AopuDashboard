@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.BlogMapper">
+
+    <sql id="Base_Column_List">
+        id
+        ,title,content,user_id,date
+    </sql>
+    <select id="selectAll" resultType="aopu.pojo.Blog">
+        select *
+        from blog
+    </select>
+
+    <select id="selectById" resultType="aopu.pojo.Blog">
+        select *
+        from blog
+        where blog.id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        delete
+        from blog
+        where id = #{id}
+    </delete>
+
+    <insert id="insert" parameterType="aopu.pojo.Blog" useGeneratedKeys="true" keyProperty="id">
+        insert into blog
+        <trim prefix="(" suffix=")" suffixOverrides=",">id,
+            <if test="title != null">title,</if>
+            <if test="content != null">content,</if>
+
+
+            <if test="userId != null">user_id,</if>
+            <if test="date != null">date,</if>
+
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">UUID(),
+            <if test="title != null">#{title},</if>
+            <if test="content != null">#{content},</if>
+
+
+            <if test="userId != null">#{userId},</if>
+            <if test="date != null">#{date},</if>
+
+        </trim>
+    </insert>
+
+    <update id="updateById" parameterType="aopu.pojo.Blog">
+        update blog
+        <set>
+            <if test="title != null">
+                title = #{title}
+            </if>
+            <if test="content != null">
+                content = #{content}
+            </if>
+
+            <if test="userId != null">
+                userId = #{userId}
+            </if>
+            <if test="date != null">
+                date = #{date}
+            </if>
+
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

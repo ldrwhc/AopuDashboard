@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.StoreMapper">
+    <insert id="addStore">
+        insert into aopu.store
+        values (UUID(),#{province},#{city},#{corporateName},#{storeName},#{storeClass},#{area},#{segmentation},#{openTime},#{shopGuide},#{telephone})
+    </insert>
+    <update id="updateStore">
+        update store
+        set province = #{province},city=#{city},corporateName=#{corporateName},storeName =#{storeName},storeClass = #{storeClass},area = #{area},segmentation=#{segmentation},openTime=#{openTime},shopGuide=#{shopGuide},telephone=#{telephone}
+        where id=#{id}
+    </update>
+    <delete id="deleteStore">
+        delete from aopu.store where id=#{id}
+    </delete>
+
+    <select id="findByProvinceAndCity" resultType="aopu.pojo.Store">
+        select * from aopu.store where province=#{province} and city=#{city};
+    </select>
+    <select id="findByName" resultType="aopu.pojo.Store">
+        SELECT * FROM aopu.store WHERE LOCATE(#{findName}, `storename`)>0
+    </select>
+    <select id="findById" resultType="aopu.pojo.Store">
+        select * from aopu.store where id=#{id};
+    </select>
+</mapper>

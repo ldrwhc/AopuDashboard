@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.SaleMapper">
+    <insert id="addSale">
+        insert into aopu.sale
+        values (UUID(),#{province},#{city},#{agentName},#{storeName},#{salesman},#{price},#{goodName},#{amount},#{writeDate},#{orderImgUrl})
+    </insert>
+    <update id="addUrl">
+        update sale
+        set orderImgUrl=#{orderImgUrl}
+        where id=#{id}
+    </update>
+    <update id="updateSale">
+        update sale
+        set province = #{province},city=#{city},agentName=#{agentName},storeName =#{storeName},salesman = #{salesman},price = #{price},goodName=#{goodName},amount=#{amount},writeDate=#{writeDate},orderImgUrl=#{orderImgUrl}
+        where id=#{id}
+    </update>
+    <delete id="deleteSale">
+        delete from sale where id=#{id}
+    </delete>
+    <select id="findByProvinceAndCity" resultType="aopu.pojo.Sale">
+        select * from aopu.sale where province=#{province} and city=#{city};
+    </select>
+    <select id="findAll" resultType="aopu.pojo.Sale">
+        select * from sale;
+    </select>
+    <select id="findByName" resultType="aopu.pojo.Sale">
+        SELECT * FROM aopu.sale WHERE LOCATE(#{findName}, `goodname`)>0
+    </select>
+    <select id="findById" resultType="aopu.pojo.Sale">
+        select * from aopu.sale where id=#{id};
+    </select>
+</mapper>

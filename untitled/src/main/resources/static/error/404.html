@@ -1,0 +1,431 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>404 Page Not Found || Forge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- All css files are included here -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start of header area -->
+        <header>
+            <div class="header-top gray-bg" id="app">
+                <div class="container">
+                    <div class="row">
+                        <template v-if="hasUserInfo">
+                            <div class="col-sm-5 hidden-xs" >
+                                <div class="header-top-left">
+                                    <ul class="header-top-style text-capitalize mr-25">
+                                        <li><a href="account.html"><span class="mr-10">{{user.username}}</span><i class="fa fa-angle-down"></i></a>
+                                            <ul class="ul-style my-account box-shadow white-bg">
+                                                <li><a href="account.html">我的</a></li>
+                                                <li><a href="wishlist.html">收藏</a></li>
+                                                <li><a href="cart.html">购物车</a></li>
+                                                <li><a href="checkout.html">退出账号</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </template>
+                        <template v-else>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="header-top-middle">
+                                    <ul class="header-top-style">
+                                        <li>
+                                            <a href="login.html">
+                                                <span>登录/注册</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </template>
+
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="header-top-middle">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <div class="header-top-right">
+                                <span class="mr-20"><a href="#"><img alt="" src="images/header/search-icon.png"></a></span>
+                                <span><input type="text" class="pl-10" placeholder="Search..."></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row header-middle-content">
+                        <div class="col-md-5 col-sm-4 hidden-xs">
+                            <div class="service-inner mt-10">
+                                <span class="service-img b-img">
+                                    <img alt="" src="images/service.png">
+                                </span>
+                                <span class="service-content ml-15"><strong>二手书籍交易平台</strong><br>毕业设计</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-12">
+                        </div>
+                        <div class="col-md-offset-0 col-md-5 col-sm-offset-0 col-sm-4 col-xs-offset-3 col-xs-6">
+                            <div class="shopping-cart">
+                                <a href="#">
+                                    <span class="shopping-cart-control">
+                                        <img alt="" src="images/shop.png">
+                                    </span>
+                                    <span class="cart-size-value"><strong>购物车</strong></span>
+                                </a>
+                                <ul class="shopping-cart-down box-shadow white-bg">
+                                    <li class="media">
+                                        <a href="#"><img alt="" src="images/cart/1.jpg"></a>
+                                        <div class="cart-item-wrapper">
+                                            <a href="#">商品1</a></br>
+                                            <span class="quantity">
+                                                <span class="amount">$195</span>
+                                                 x 2
+                                            </span>
+                                            <a title="Remove this item" class="remove" href="#">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <a href="#"><img alt="" src="images/cart/2.jpg"></a>
+                                        <div class="cart-item-wrapper">
+                                            <a href="#">商品2</a></br>
+                                            <span class="quantity">
+                                                <span class="amount">$145</span>
+                                                 x 1
+                                            </span>
+                                            <a title="Remove this item" class="remove" href="#">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <a href="#"><img alt="" src="images/cart/3.jpg"></a>
+                                        <div class="cart-item-wrapper">
+                                            <a href="#">商品3</a></br>
+                                            <span class="quantity">
+                                                <span class="amount">$155</span>
+                                                 x 2
+                                            </span>
+                                            <a title="Remove this item" class="remove" href="#">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <span class="total-title pull-left">全部价格</span>
+                                        <span class="total pull-right">$845</span>
+                                    </li>
+                                    <li class="media">
+                                        <a class="cart-btn" href="cart.html">查看购物车</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav class="primary-menu">
+                            <ul class="header-top-style text-uppercase">
+                                <li>
+                                    <a href="index.html">主页</a>
+                                </li>
+                                <li><a href="about.html">关于</a></li>
+                                <li>
+                                    <a href="shop.html">分类</a>
+                                    <div class="megamenu-area ul-style box-shadow white-bg">
+                                        <div class="mega-inner ptb-40">
+                                            <h6 class="mega-title text-uppercase"><strong>大一</strong></h6>
+                                            <ul class="text-capitalize forge-list">
+                                                <li><a href="shop.html">高数</a></li>
+                                                <li><a href="shop.html">线代</a></li>
+                                                <li><a href="shop.html">近代史</a></li>
+                                                <li><a href="shop.html">C语言</a></li>
+                                                <li><a href="shop.html">大学物理</a></li>
+                                                <li><a href="shop.html">其他</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-inner ptb-40">
+                                            <h6 class="mega-title text-uppercase"><strong>大二</strong></h6>
+                                            <ul class="text-capitalize forge-list">
+                                                <li><a href="shop.html">概率论</a></li>
+                                                <li><a href="shop.html">马原</a></li>
+                                                <li><a href="shop.html">模电</a></li>
+                                                <li><a href="shop.html">数电</a></li>
+                                                <li><a href="shop.html">微机</a></li>
+                                                <li><a href="shop.html">其他</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-inner ptb-40">
+                                            <h6 class="mega-title text-uppercase"><strong>大三</strong></h6>
+                                            <ul class="text-capitalize forge-list">
+                                                <li><a href="shop.html">电磁场</a></li>
+                                                <li><a href="shop.html">通信原理</a></li>
+                                                <li><a href="shop.html">无线通信原理</a></li>
+                                                <li><a href="shop.html">移动通信</a></li>
+                                                <li><a href="shop.html">嵌入式</a></li>
+                                                <li><a href="shop.html">其他</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-inner ptb-40">
+                                            <h6 class="mega-title text-uppercase"><strong>大四</strong></h6>
+                                            <ul class="text-capitalize forge-list">
+                                                <li><a href="shop.html">毕业设计</a></li>
+                                                <li><a href="shop.html">通信实验</a></li>
+                                                <li><a href="shop.html">其他</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="https://space.bilibili.com/76576015">联系作者</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End of header area -->
+        <!-- Start Breadcrumbs Area -->
+        <div class="breadcrumbs-area breadcrumbs-bg ptb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumbs-inner">
+                            <h5 class="breadcrumbs-disc m-0">Best Products for you</h5>
+                            <h2 class="breadcrumbs-title text-black m-0">404 page not found </h2>
+                            <ul class="top-page">
+                                <li><a href="index.html">Home</a></li>
+                                <li>></li>
+                                <li>404 page not found</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- End Breadcrumbs Area -->
+        <!-- Start page content -->
+        <section id="page-content" class="page-wrapper pt-10">
+            <!-- Banner Area Start -->
+
+            <!-- Banner Area End -->
+            <!-- Start 404 Area -->
+            <div class="error-text-area pt-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="error-text text-center gray-ash-bg ptb-140">
+                                <div class="error-main-text pb-20">
+                                    <h1><strong>404</strong></h1>
+                                    <h4>页面不存在</h4>
+                                </div>
+                                <div class="error-bottom-text">
+                                    <h4> OPPS ... WE ARE SORRY</h4>
+                                    <p>but the page you looking for is not found</p>
+                                    <p>make sure that you have typed the currect URL</p>
+                                </div>
+                                <h5 class="text-uppercase m-0 pt-50">
+                                    <a href="http://localhost:8088/indexPage">返回首页</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End 404 Area -->
+
+
+        </section>
+        <!-- End page content -->
+        <!-- Start footer area -->
+        <footer id="footer" class="footer-area">
+            <div class="footer-middle-area footer-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="single-footer-inner">
+                                <h5 class="footer-title text-white">联系我</h5>
+                                <ul class="footer-contact">
+                                    <li class="contact-icon">
+                                        <img alt="" src="images/footer/icon/1.png">
+                                    </li>
+                                    <li class="footer-text text-ash">
+                                        <p>南京市新模范马路66号</p>
+                                        <p>南京市仙林大学城文苑路9号</p>
+                                    </li>
+                                </ul>
+                                <ul class="footer-contact">
+                                    <li class="contact-icon">
+                                        <img alt="" src="images/footer/icon/2.png">
+                                    </li>
+                                    <li class="footer-text text-ash">
+                                        <p>Telephone : （86）-25-85866888</p>
+                                        <p>Telephone : （86）-25-85866999</p>
+                                    </li>
+                                </ul>
+                                <ul class="footer-contact">
+                                    <li class="contact-icon">
+                                        <img alt="" src="images/footer/icon/3.png">
+                                    </li>
+                                    <li class="footer-text text-ash">
+                                        <a href="mailto:njupt@njupt.edu.cn" target="_blank">Email : njupt@njupt.edu.cn</a></br>
+                                        <a href="https://www.njupt.edu.cn" target="_blank">Web : https://www.njupt.edu.cn/</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <div class="single-footer-inner">
+                                <h5 class="footer-title text-white">作者</h5>
+                                <ul class="footer-menu">
+                                    <li><p style="color:RGB(255,255,255)">B20011311</p></li>
+                                    <li><p style="color:RGB(255,255,255)">王昊骋</p></li>
+                                    <li><p style="color:RGB(255,255,255)">012921440116</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                            <div class="single-footer-inner">
+                                <h5 class="footer-title text-white">支持</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="https://www.bilibili.com/video/BV1T54y1n7PB/">参考视频</a></li>
+                                    <li><a href="3">备用</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-9">
+                            <h2 class="footer-title">最新上架</h2>
+                            <div class="tweet-list">
+                                <ul class="left-tweet">
+                                    <li class="tweet-inner clearfix">
+                                        <div class="tweet-img">
+                                            <a href="#">
+                                                <img alt="" src="images/footer/tweet/1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="tweet-text">
+                                            <a href="#">Forge is the best ecommerce elt</a>
+                                            <p>Jan 25, 2016</p>
+                                        </div>
+                                    </li>
+                                    <li class="tweet-inner clearfix">
+                                        <div class="tweet-img">
+                                            <a href="#">
+                                                <img alt="" src="images/footer/tweet/2.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="tweet-text">
+                                            <a href="#">Forge is the best ecommerce elt</a>
+                                            <p>Jan 25, 2016</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="left-tweet">
+                                    <li class="tweet-inner clearfix">
+                                        <div class="tweet-img">
+                                            <a href="#">
+                                                <img alt="" src="images/footer/tweet/1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="tweet-text">
+                                            <a href="#">Forge is the best ecommerce elt</a>
+                                            <p>Jan 25, 2016</p>
+                                        </div>
+                                    </li>
+                                    <li class="tweet-inner clearfix">
+                                        <div class="tweet-img">
+                                            <a href="#">
+                                                <img alt="" src="images/footer/tweet/2.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="tweet-text">
+                                            <a href="#">Forge is the best ecommerce elt</a>
+                                            <p>Jan 25, 2016</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- End footer area -->           
+    </div>
+    <!-- Body main wrapper end -->    
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="js/plugins.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="js/main.js"></script>
+
+    <script>
+        var v = new Vue({
+            el: "#app",
+            data:{
+                user:{
+                    username:""
+                },
+                hasUserInfo : false
+            },
+            mounted:function(){
+                axios.get("http://localhost:8088/user/userinfo",{headers: {token: localStorage.getItem("token")}}).then((res)=>{
+                    console.log(res.data.data.username)
+                    // 判断code是否为200
+                    if(res.data.code == 200){
+                        // 成功，把值赋值给this.books
+                        this.user.username = res.data.data.username;
+                        this.hasUserInfo = true;
+                    }
+                })
+            },
+            methods:{
+                pageForward(){
+                    axios.get("http://localhost:8088/indexPage").then((res)=>{
+                        location.href = "http://localhost:8088/shop.html";
+                    })
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

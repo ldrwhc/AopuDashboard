@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.InventoryMapper">
+    <insert id="addInventory">
+        insert into aopu.inventory
+        values (UUID(),#{category},#{goodName},#{factoryPrice},#{transactionPrice})
+    </insert>
+    <update id="updateInventory">
+        update inventory
+        set category = #{category},goodName=#{goodName},factoryPrice=#{factoryPrice},transactionPrice =#{transactionPrice}
+        where id=#{id}
+    </update>
+    <delete id="deleteInventory">
+        delete from inventory where id=#{id}
+    </delete>
+    <select id="findByName" resultType="aopu.pojo.Inventory">
+        SELECT * FROM aopu.inventory WHERE LOCATE(#{findName}, `goodname`)>0
+    </select>
+    <select id="findById" resultType="aopu.pojo.Inventory">
+        select * from aopu.inventory where id=#{id};
+    </select>
+    <select id="findAll" resultType="aopu.pojo.Inventory">
+        select * from inventory;
+    </select>
+</mapper>

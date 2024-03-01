@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.SalesmanMapper">
+    <insert id="addSalesman">
+        insert into aopu.salesman
+        values (UUID(),#{province},#{city},#{corporateName},#{name},#{telephone},#{age},#{education},#{joinDate},#{manageArea})
+    </insert>
+    <update id="updateSalesman">
+        update salesman
+        set province = #{province},city=#{city},corporateName=#{corporateName},name =#{name},telephone = #{telephone},age = #{age},education=#{education},joinDate=#{joinDate},manageArea=#{manageArea}
+        where id=#{id}
+    </update>
+    <delete id="deleteSalesman">
+        delete from salesman where id=#{id}
+    </delete>
+    <select id="findByProvinceAndCity" resultType="aopu.pojo.Salesman">
+        select * from aopu.salesman where province=#{province} and city=#{city};
+    </select>
+    <select id="findById" resultType="aopu.pojo.Salesman">
+        select * from aopu.salesman where id=#{id};
+    </select>
+    <select id="findByName" resultType="aopu.pojo.Salesman">
+        SELECT * FROM aopu.salesman WHERE LOCATE(#{findName}, `name`)>0
+    </select>
+    <select id="findAll" resultType="aopu.pojo.Salesman">
+        select * from salesman;
+    </select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.PurchasingMapper">
+    <insert id="addPurchasing">
+        insert into aopu.purchasing
+        values (UUID(),#{corporateName},#{purchaseDate},#{category},#{goodName},#{quantity},#{price},#{discount})
+    </insert>
+    <update id="updatePurchasing">
+        update purchasing
+        set corporateName = #{corporateName},purchaseDate=#{purchaseDate},category=#{category},goodName =#{goodName},quantity = #{quantity},price = #{price},discount=#{discount}
+        where id=#{id}
+    </update>
+    <delete id="deletePurchasing">
+        delete from purchasing where id=#{id}
+    </delete>
+    <select id="findByName" resultType="aopu.pojo.Purchasing">
+        SELECT * FROM aopu.purchasing WHERE LOCATE(#{findName}, `corporatename`)>0
+    </select>
+    <select id="findAll" resultType="aopu.pojo.Purchasing">
+        select * from purchasing
+    </select>
+    <select id="findById" resultType="aopu.pojo.Purchasing">
+        select * from aopu.purchasing where id=#{id};
+    </select>
+</mapper>

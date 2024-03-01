@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="aopu.mapper.AgentMapper">
+    <insert id="addAgent">
+        insert into aopu.agent
+        values (UUID(),#{province},#{city},#{corporateName},#{agentName},#{telephone},#{age},#{education},#{agentBrand},#{cooperationTime})
+    </insert>
+    <update id="updateAgent">
+        update agent
+        set province = #{province},city=#{city},corporateName=#{corporateName},agentName =#{agentName},telephone = #{telephone},age = #{age},education=#{education},agentBrand=#{agentBrand},cooperationTime=#{cooperationTime}
+        where id=#{id}
+    </update>
+    <delete id="deleteAgent">
+        delete from agent where id=#{id}
+    </delete>
+    <select id="findByProvinceAndCity" resultType="aopu.pojo.Agent">
+        select * from aopu.agent where province=#{province} and city=#{city};
+    </select>
+    <select id="findByName" resultType="aopu.pojo.Agent">
+        SELECT * FROM aopu.agent WHERE LOCATE(#{findName}, `corporatename`)>0
+    </select>
+    <select id="findById" resultType="aopu.pojo.Agent">
+        select * from aopu.agent where id=#{id};
+    </select>
+</mapper>

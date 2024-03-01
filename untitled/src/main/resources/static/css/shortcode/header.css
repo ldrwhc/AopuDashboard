@@ -1,0 +1,425 @@
+/* -----------------------------------
+Template Name: Freak Ecommerce Responsive Bootstrap Template
+Template URI: http://bootexperts.com
+Description: This is html5 template
+Author: BootExperts
+Author URI: http://bootexperts.com
+Version: 1.0
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.header-top {
+  padding: 7px 0;
+}
+.header-top-style li {
+  line-height: 32px;
+  position: relative;
+}
+.header-top-style a {
+  font-size: 12px;
+  font-weight: 600;
+  color:#ddd;
+}
+.header-top-style li ul li a {
+  color: #A6A6A6;
+}
+.header-top-style li ul.ul-style {
+  padding: 10px 0 10px 28px;
+}
+ul.header-top-style {
+  display: inline-block;
+  position: relative;
+}
+.my-account {
+  left: 0;
+  top: 100%;
+  width: 130px;
+}
+.currency {
+  left: 50%;
+  margin-left: -65px;
+  top: 100%;
+  width: 130px;
+}
+.ul-style {
+  opacity: 0;
+  position: absolute;
+  transform: scaleY(0.4);
+  transform-origin: center top 0;
+  transition: all 0.3s linear 0s;
+  visibility: hidden;
+  z-index: 1;
+}
+.my-account li::before {
+  background: #a6a6a6 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: -12px;
+  position: absolute;
+  top: 13px;
+  width: 7px;
+  transition: all 0.5s ease 0s;
+}
+.header-top-style li:hover .ul-style {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+  z-index: 99;
+}
+.my-account li:hover::before {
+  background: #CD638B none repeat scroll 0 0;
+}
+.header-top-style li:hover > a {
+  color: #CD638B;
+}
+.ul-style span {
+  margin-left: 7px;
+}
+.language {
+  left: 50%;
+  margin-left: -65px;
+  top: 100%;
+  width: 130px;
+}
+.login-register {
+  left: 50%;
+  margin-left: -115px;
+  width: 230px;
+}
+.login-register > input#user-name[type="text"] {
+  background: rgba(0, 0, 0, 0) url("../../images/header/user.png") no-repeat scroll 12px 10px;
+}
+.login-register > input {
+  border: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+}
+.login-register > input#password[type="password"] {
+  background: rgba(0, 0, 0, 0) url("../../images/header/password.png") no-repeat scroll 12px 10px;
+}
+.remmember > input {
+  margin: 0;
+  vertical-align: middle;
+}
+.login-register button {
+  left: 0;
+  margin: 10px auto 42px;
+  right: 0;
+}
+.login-social > li {
+  border: 1px solid #cccccc;
+  display: inline-block;
+  height: 22px;
+  line-height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  width: 25px;
+}
+.login-social > li:hover {
+  background: #252525 none repeat scroll 0 0;
+  border-color: #252525;
+}
+.header-top-right {
+  float: right;
+  margin-top: 5px;
+}
+.header-top-right input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #a6a6a6;
+  color: #ffffff;
+  height: 23px;
+  line-height: 23px;
+  width: 75%;
+    font-weight: 300;
+    
+}
+.service-inner span {
+  display: inline-block;
+    font-weight: 300;
+}
+.service-content strong {
+  font-size: 16px;
+}
+.service-img img {
+  margin-bottom: 5px;
+  vertical-align: bottom;
+}
+.shopping-cart {
+  float: right;
+  margin-top: 6px;
+}
+.shopping-cart span {
+  display: inline-block;
+}
+.cart-size-value {
+  margin-top: 5px;
+}
+.cart-size-value {
+  color: #282828;
+  line-height: 20px;
+  margin: 0;
+}
+.shopping-cart-control {
+  margin-right: 6px;
+  vertical-align: top;
+}
+.cart-size-value {
+  margin-top: 5px;
+}
+.shopping-cart:hover .shopping-cart-down {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+}
+.shopping-cart-down {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 1px 0 8px -4px #595959;
+  list-style: outside none none;
+  opacity: 0;
+  padding: 27px 12px;
+  position: absolute;
+  right: 0;
+  top: 124%;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 215px;
+  z-index: 1;
+}
+.login-register input::-moz-placeholder {
+  color: #a6a6a6;
+  font-family: "Montserrat",sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  transition: all 0.3s linear 0s;
+}
+.login-register input:focus::-moz-placeholder {
+  opacity: 0;
+  padding-left: 10px;
+  visibility: hidden;
+}
+.cart-item-wrapper {
+  overflow: hidden;
+  padding-right: 20px;
+  position: relative;
+  text-align: left;
+}
+.media > a {
+  float: left;
+  margin-right: 10px;
+}
+.shopping-cart-down li.media {
+  position: relative;
+}
+.cart-item-wrapper > a {
+  color: #282828;
+  font-size: 12px;
+}
+.shopping-cart span {
+  display: inline-block;
+}
+a.remove {
+  color: #a6a6a6;
+  font-size: 14px;
+  position: absolute;
+  right: 22px;
+  top: 10px;
+}
+.cart-item-wrapper a:hover {
+  color: #cd6289;
+}
+li.media a.cart-btn {
+  border: 1px solid #a6a6a6;
+  border-radius: 13.5px;
+  display: inline-block;
+  font-size: 10px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  width: 90px;
+}
+.shopping-cart-down li.media > a {
+  float: left;
+  margin-right: 10px;
+}
+li.media a.cart-btn:last-child {
+  margin: 0;
+}
+li.media a.cart-btn:hover {
+  background: #ec552c none repeat scroll 0 0;
+  border-color: #ec552c;
+  color: #ffffff;
+}
+.header-middle-content {
+  height: 124px;
+  padding-top: 30px;
+  position: relative;
+  z-index: 12;
+}
+.primary-menu::before {
+  border-color: #282828 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 65px 45px 45px;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 0;
+  z-index: -1;
+}
+.primary-menu {
+  background: #282828 none repeat scroll 0 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+}
+.primary-menu > ul > li {
+  margin-right: 16px;
+}
+.primary-menu > ul > li {
+  display: inline-block;
+  line-height: 65px;
+  margin-right: 24px;
+  position: relative;
+}
+.primary-menu > ul > li:last-child {
+  margin: 0;
+}
+.primary-menu > ul > li > a {
+  color: #ddd;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  transition: all 0.3s linear 0s;
+}
+.primary-menu > ul > li:hover a {
+  color: #cd6289;
+}
+.menu-tag::before {
+  background: #ff0000 none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #ffffff;
+  content: "HOT";
+  font-family: "Open Sans",sans-serif;
+  font-size: 9px;
+  font-weight: normal;
+  left: 50%;
+  line-height: 22px;
+  padding: 0 10px;
+  position: absolute;
+  top: -8px;
+}
+.menu-tag::after {
+  border-left: 0 solid rgba(0, 0, 0, 0);
+  border-right: 5px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid #ff0000;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 9%;
+  top: 20%;
+  transform: rotate(20deg);
+  width: 0;
+}
+.menu-tag {
+  position: relative;
+}
+.dropdown {
+  left: 50%;
+  margin-left: -95px;
+  position: absolute;
+  top: 85%;
+  width: 190px;
+}
+ul.header-top-style .forge-list li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  transition: all 0.2s linear 0s;
+}
+ul.header-top-style .forge-list li:hover a {
+  color: #cd6289;
+}
+ul.header-top-style .forge-list li:hover::before {
+  background: #d1648c none repeat scroll 0 0;
+}
+ul.header-top-style .forge-list li::before {
+  background: #333 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: -12px;
+  position: absolute;
+  top: 14px;
+  width: 7px;
+}
+.megamenu-area {
+  left: -100%;
+  margin-left: -390.5px;
+  padding: 0 40px 0 69px;
+  width: 785px;
+}
+.mega-inner {
+  float: left;
+  width: 25%;
+}
+.mobile-menu-area {
+  background: #CD6289 none repeat scroll 0 0;
+  display: none;
+}
+.mean-container .mean-nav ul li:last-child {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

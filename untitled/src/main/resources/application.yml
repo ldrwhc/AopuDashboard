@@ -1,0 +1,26 @@
+myport: 8089
+server:
+  port: ${myport:8089}
+
+
+# Spring整合mybatis
+#    username: wangminan
+#    password: HaoHao20021118
+#    username: root
+#    password: 123456
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/aopu?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  banner:
+    location: banner.txt
+
+# 配置mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml  # mapper映射文件
+  type-aliases-package: aopu.pojo  # 配置哪个包下的类有默认的别名
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰命名与下划线命名转换

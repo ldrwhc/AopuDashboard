@@ -1,0 +1,194 @@
+/* -----------------------------------
+Template Name: Freak Ecommerce Responsive Bootstrap Template
+Template URI: http://bootexperts.com
+Description: This is html5 template
+Author: BootExperts
+Author URI: http://bootexperts.com
+Version: 1.0
+
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+.footer-top-area {
+  background: rgba(0, 0, 0, 0) url("../../images/footer/footer-top.jpg") no-repeat fixed center center / cover ;
+}
+.footer-top-content > a {
+  display: block;
+  margin-bottom: 7px;
+}
+.footer-top-content p {
+  color: #c9c9c9;
+  margin: 0 auto;
+  width: 52%;
+}
+.social-icon > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icon li a:hover {
+  background: #cd6289 none repeat scroll 0 0;
+  border-color: #cd6289;
+  color: #ffffff;
+}
+.social-icon li a {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  color: #dddddd;
+  display: block;
+  height: 26px;
+  line-height: 24px;
+  width: 26px;
+}
+.footer-text > p {
+  margin: 0;
+}
+.footer-title::before {
+  background: #cd6289 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 85%;
+}
+.footer-title {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.footer-middle-area {
+  padding: 56px 0;
+}
+.single-footer-inner ul {
+  margin-bottom: 16px;
+}
+.footer-contact li {
+  display: inline-block;
+}
+.contact-icon {
+  margin-right: 12px;
+  margin-top: 6px;
+  vertical-align: top;
+}
+.single-footer-inner ul:last-child {
+  margin: 0;
+}
+.footer-menu > li::before {
+  background: #a6a6a6 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  transition: all 0.3s ease 0s;
+  width: 7px;
+}
+.footer-menu > li:first-child::before {
+  top: 8px;
+}
+.footer-menu > li:first-child {
+  padding-top: 0;
+}
+.footer-menu > li {
+  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-top: 5px;
+  position: relative;
+}
+.footer-menu > li a {
+  display: block;
+}
+.footer-menu > li:hover::before {
+  background: #cd6289 none repeat scroll 0 0;
+}
+.tweet-list {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+}
+.tweet-list ul {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+}
+.left-tweet li:first-child {
+  margin-bottom: 15px;
+}
+.tweet-inner {
+  background: #2f2f2f none repeat scroll 0 0;
+}
+.tweet-img {
+  width: 40%;
+}
+.tweet-inner div {
+  float: left;
+}
+.tweet-img img {
+  width: 100%;
+}
+.tweet-text {
+  padding-left: 12px;
+  padding-top: 10px;
+  width: 60%;
+}
+.tweet-text > a {
+  color: #dddddd;
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+}
+.tweet-text > p {
+  color: #cd6289;
+  font-size: 12px;
+  margin: 0;
+}
+.tweet-text > a:hover {
+  color: #dddddd;
+}
+.footer-bottom-area {
+  background: #363636 none repeat scroll 0 0;
+  padding: 18px 0;
+}
+.copyright > p {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 70px;
+  margin: 0;
+}
+.copyright a {
+  color: #cd6289;
+}
+.footer-bottom-menu > li {
+  display: inline-block;
+  line-height: 70px;
+}
+.footer-bottom-menu li a {
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 0 20px;
+}
+.footer-bottom-menu li:last-child a {
+  border: 0 solid #ffffff;
+}
+.footer-bottom-menu li a:hover {
+  color: #cd6289;
+}
+.copyright a:hover {
+  color: #ffffff;
+}
+.payment-method {
+  line-height: 70px;
+}
+
+
+
+
+
+
