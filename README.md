@@ -18,17 +18,17 @@
 
 首页部分截图演示：
 
-![image-20240301150248659](C:\Users\whc\AppData\Roaming\Typora\typora-user-images\image-20240301150248659.png)
+![image-20240301150248659](门店管理系统.assets/image-20240301150248659.png)
 
 数据显示部分截图：
 
-![image-20240301150308068](C:\Users\whc\AppData\Roaming\Typora\typora-user-images\image-20240301150308068.png)
+![image-20240301150308068](门店管理系统.assets/image-20240301150308068.png)
 
 备忘录截图：
 
-![image-20240301150532910](C:\Users\whc\AppData\Roaming\Typora\typora-user-images\image-20240301150532910.png)
+![image-20240301150532910](门店管理系统.assets/image-20240301150532910.png)
 
-![image-20240301150549354](C:\Users\whc\AppData\Roaming\Typora\typora-user-images\image-20240301150549354.png)
+![image-20240301150549354](门店管理系统.assets/image-20240301150549354.png)
 
 ## 组织结构
 
