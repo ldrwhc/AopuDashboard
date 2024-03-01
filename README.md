@@ -32,28 +32,28 @@
 
 ## 组织结构
 
-> aopu_web
-> ├── public -- 主页以及图标
-> └── src -- Vue代码
-> 	├── assets -- logo以及全局css
-> 	├── components -- 组件
-> 	├── router -- 路由文件
-> 	├── utils -- 工具包(Html转Excel导出工具)
-> 	├── App.vue -- 主组件
-> 	└── main.js -- 启动文件
->
-> untitled
->
-> ├── src.main.java.aopu -- 主java代码
-> 	├── config-- Springboot配置类文件
-> 	├── controller -- 控制层
-> 	├── exception -- Springboto异常处理
-> 	├── interceptor -- 过滤器，用于检验JWT
-> 	├── mapper -- mybatis映射接口
-> 	├── pojo -- 普通 Java 对象，用于对接数据库
-> 	├── service -- 服务层
-> 	├── util -- 工具包(JwtUtil)
-> 	└── AopuApplication.java -- 启动文件
+ aopu_web
+ ├── public -- 主页以及图标
+ └── src -- Vue代码
+ 	├── assets -- logo以及全局css
+ 	├── components -- 组件
+ 	├── router -- 路由文件
+ 	├── utils -- 工具包(Html转Excel导出工具)
+ 	├── App.vue -- 主组件
+ 	└── main.js -- 启动文件
+
+ untitled
+
+ ├── src.main.java.aopu -- 主java代码
+ 	├── config-- Springboot配置类文件
+ 	├── controller -- 控制层
+ 	├── exception -- Springboto异常处理
+ 	├── interceptor -- 过滤器，用于检验JWT
+ 	├── mapper -- mybatis映射接口
+ 	├── pojo -- 普通 Java 对象，用于对接数据库
+ 	├── service -- 服务层
+ 	├── util -- 工具包(JwtUtil)
+ 	└── AopuApplication.java -- 启动文件
 
 ## 技术选型
 
