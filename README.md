@@ -32,7 +32,7 @@
 
 ## 组织结构
 
- aopu_web
+ > aopu_web
  ├── public -- 主页以及图标
  └── src -- Vue代码
  	├── assets -- logo以及全局css
@@ -42,8 +42,7 @@
  	├── App.vue -- 主组件
  	└── main.js -- 启动文件
 
- untitled
-
+ > untitled
  ├── src.main.java.aopu -- 主java代码
  	├── config-- Springboot配置类文件
  	├── controller -- 控制层
