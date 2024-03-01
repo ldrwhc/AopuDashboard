@@ -35,8 +35,8 @@
  > aopu_web
  ├── public -- 主页以及图标
  └── src -- Vue代码
- 	├── assets -- logo以及全局css
- 	├── components -- 组件
+  ├── assets -- logo以及全局css
+  ├── components -- 组件
  	├── router -- 路由文件
  	├── utils -- 工具包(Html转Excel导出工具)
  	├── App.vue -- 主组件
